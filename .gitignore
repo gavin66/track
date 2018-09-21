@@ -1,4 +1,5 @@
 .idea
-/vendor/
 .env
+tests/
 storage/logs
+/vendor/
