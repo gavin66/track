@@ -1,0 +1,55 @@
+{
+    "name": "gavin66/track",
+    "description": "Web Framework.",
+    "keywords": [
+        "framework"
+    ],
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gavin",
+            "email": "tianyu_0723@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "symfony/http-foundation": "~3.2",
+        "symfony/routing": "~3.2",
+        "symfony/finder": "~3.2",
+        "guzzlehttp/guzzle": "^6.2",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-PDO": "*",
+        "ext-openssl": "*",
+        "ext-mbstring": "*",
+        "ext-SimpleXML": "*",
+        "ext-libxml": "*",
+        "ext-redis": "*",
+        "ext-posix": "*",
+        "ext-pcntl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Track\\": "Track/",
+            "App\\": "app/"
+        },
+        "files": [
+            "Track/Support/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
